@@ -1,0 +1,23 @@
+<h1>Here are all the posts</h1>
+  <div class='container'>
+  <%= link_to 'New post', new_post_path %>
+  <table>
+    <tr>
+      <th>Title</th>
+      <th>Post</th>
+      <th colspan="2"></th>
+    </tr>
+
+    <% @post.each do |p| %>
+      <tr>
+        <td><%= p.title %></td>
+        <td><%= p.post %></td>
+        <td><%= link_to 'Show', post_path(p) %></td>
+        <td><%= link_to 'Edit', edit_post_path(p) %></td>
+        <td><%= link_to 'Delete', post_path(p),
+                method: :delete,
+                data: {confirm: 'Do you really want to delete this post?'} %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
