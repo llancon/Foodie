@@ -9,3 +9,12 @@ def new
 end
 
 end
+
+def auth
+  {
+    'client' => {
+      'Client_id' => ENV["Client_id"],
+      'Client_secret' => ENV["Client_secret"]
+    }
+  }
+end
