@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+require 'marketingcloudsdk'
 
 def index
   @user = User.all
@@ -17,4 +18,6 @@ def auth
       'Client_secret' => ENV["Client_secret"]
     }
   }
+end
+
 end

@@ -1,3 +1,3 @@
 class Home < ApplicationRecord
-  welcome
+  # welcome
 end
