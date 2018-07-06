@@ -12,4 +12,12 @@ class UserTest < ActiveSupport::TestCase
     assert @user.valid?
   end
 
+  test 'testing presence of username' do
+    @user.username = '    '
+    assert_not @user.valid?
+  end
+
+
+
+
 end
