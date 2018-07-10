@@ -26,4 +26,4 @@ Posts = post, title
 ratings = rating:number
 favorites = user,foods,
 
-Listing 6.14
+Listing 6.2.4
