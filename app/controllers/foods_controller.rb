@@ -6,8 +6,7 @@ class FoodsController < ApplicationController
 
   def update
     @food = Food.find(:id)
-    if current_user
-    #need to define user login
+  
   end
 
 end
